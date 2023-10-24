@@ -1,0 +1,33 @@
+
+{"intents":[
+    {
+        "pattern": ["olá", "ola", "oi", "tudo bem", "ei"],
+        "answer":  ["Olá, como posso ajudá-lo?", "Oi, ao seu dispor!"]
+    },
+    {
+        "pattern": ["obrigado", "agradeço", "muito obrigado"],
+        "answer":  ["Fico feliz em ajudá-lo!", "Por nada!"]
+    },
+    {
+        "pattern": ["como logar", "como fazer login", "acessar conta", "gostaria fazer login", "fazer login"],
+        "answer":  ["Acesse a página de login do Lendme, insira seu e-mail/usuário registrado e digite sua senha, logo após clique no botão 'Login' para entrar em sua conta"]
+    },
+    
+    {
+        "pattern": ["como posso mudar de senha?", "mudar senha", "como recuperar senha", "esqueci senha", "trocar senha"],
+        "answer":  ["Acesse a página de login do Lendme, em seguida clique em 'Esqueceu a Senha? e coloque o seu email registrado logo após clique no botão enviar e verifique seu email para receber as próximas instruções.'"]
+    },
+    {
+        "pattern": ["inserir pedidos", "cadastrar pedidos", "registrar pedido", "inserir pedido"],
+        "answer":  ["Acesse a página de pedidos e encontre a tabela com todas as informações dos pedidos cadastrados. Clique no botão 'Cadastrar' para abrir o formulário de cadastro do pedido. Preencha os campos necessários, como data, turno, turma, código do produto, entregador e solicitante, e escolha o status apropriado. Clique em 'Cadastrar' para registrar o novo pedido."]
+    },
+    {
+        "pattern": ["alterar pedido", "mudar pedido", "modificar pedido"],
+        "answer": ["Na mesma página de pedidos, utilize o botão 'Alterar' para abrir um formulário de busca por nome de solicitante. Isso mostrará todos os pedidos em aberto relacionados ao solicitante. Selecione o pedido que deseja alterar e faça as modificações necessárias nos campos correspondentes. Lembre-se de salvar as alterações."]
+    },
+    {
+        "pattern":["excluir pedido", "remover pedidos", "excluir pedidos", "remover pedido", "tirar pedido"],
+        "answer": ["Para remover um item da tabela, encontre o pedido que deseja excluir na página de pedidos e clique na opção presente na tabela 'Excluir'. Isso removerá o pedido da lista."]
+    }
+    
+  ]}

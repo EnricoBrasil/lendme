@@ -1,0 +1,293 @@
+/* ÁREA DO CONTEÚDO NOVO - GUIAS */
+#table-hp{
+    margin: 1% auto;
+    background-color:#DBD5D5;
+    width: 98%;
+    height: 70%;
+    border-radius: 10px;
+  }
+  .cont-hp{
+    font-family: "Century Gothic", 'Lato', sans-serif;
+  }
+  .help-slide {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .help-tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 15%;
+    background: #32539A;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+  }
+  .help-tab{
+    width: 100%;
+    padding: 0.8em 0.1em;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+  
+    color:white;
+    letter-spacing: 0.1rem;
+      transition: all 0.5s ease;
+      font-size: medium;
+      &:hover {
+        font-weight: bold;
+        background: #5892d9;
+        transition: all 0.2s ease;
+        box-shadow:1px 0.8px 0  #FCA311;
+    }
+  }
+  
+  .help-main{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .help-slide{
+    border-radius: 0 0 10px 10px;
+    height: 100%;
+    padding: 1.3em 2.5em;
+    background: #f4f6f9;
+    overflow: auto;
+  }
+  /* Configurações normais para todos os conteúdos */
+  .help-slide h1{
+    text-align: center;
+    margin: 0 auto 0.5%;
+    color: #32539A;
+    font-size: x-large;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+  .help-slide .subt{
+    text-align: center;
+    margin: 0 auto 1.3%;
+    font-size: medium;
+    font-weight: lighter;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+  .help-slide h4{
+    margin: 0 auto 0.8%;
+    font-size: medium;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+  .help-slide ul{
+    margin: 0 3em 0.8%;
+    font-size: medium;
+    font-weight: normal;
+    line-height: normal;
+  }
+  .help-slide p{
+    letter-spacing: 0.5px;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    margin: 1% auto;
+  }
+  .help-slide mark{
+    background-color: #5892d94a;
+    padding: 0.15em;
+  }
+  
+  /* Reparo para a tabela 2 - Recuperação de Senha */
+  #tab2 h1{
+    margin: 1% auto 0.5%;
+  }
+  #tab2 p{
+    margin: 2% auto;
+  }
+  #tab2 h4{
+    margin: 2% auto 1%;
+  }
+  
+  /* Reparo para a tabela 3 - Registro */
+  #tab3 ul{
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  
+  /* Reparo para a tabela 4 - Pedidos */
+  #tab4 h1{
+    margin-top: 1%;
+  }
+  #tab4 h4{
+    margin-top: 3.5%;
+  }
+  
+  /* Reparo para a tabela 5 - Sobre */
+  #tab5 p{
+    margin: 2% auto;
+  }
+  
+  /* ÁREA DOS CARDS - DESENVOLVEDORES */
+  #dev_area {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+    margin: 1% auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  
+  .cards {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .card {
+    position: relative;
+    width: calc(12em - 10px);
+    margin-right: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+  }
+  .card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.05, 1.05);
+  }
+  
+  .area-info {
+    position: absolute;
+    padding: 1em;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+  }
+  .card-area {
+    float: right;
+  }
+  .area{
+    font-size: x-small;
+    color: #23396a;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  
+  /* teste de img - precisa coletar foto de cada um da sala */
+  .card1 .card_img, .card1 .card_img-hover,
+  .card2 .card_img, .card2 .card_img-hover,
+  .card3 .card_img, .card3 .card_img-hover,
+  .card4 .card_img, .card4 .card_img-hover{
+  background-image: url('https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+  }
+  .card5 .card_img, .card5 .card_img-hover{
+      background-image: url(../imagens/desenvolvedores/fabio.png);
+  }
+  
+  .card6 .card_img, .card6 .card_img-hover,
+  .card7 .card_img, .card7 .card_img-hover,
+  /* .card8 .card_img, .card8 .card_img-hover, */
+  .card9 .card_img, .card9 .card_img-hover,
+  .card10 .card_img, .card10 .card_img-hover,
+  .card11 .card_img, .card11 .card_img-hover,
+  .card12 .card_img, .card12 .card_img-hover,
+  .card13 .card_img, .card13 .card_img-hover,
+  .card14 .card_img, .card14 .card_img-hover,
+  .card15 .card_img, .card15 .card_img-hover,
+  .card16 .card_img, .card16 .card_img-hover,
+  .card17 .card_img, .card17 .card_img-hover {
+    background-image: url('https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+  }
+  
+  /* .card1 .card_img, .card1 .card_img-hover {
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  }
+  
+  .card2 .card_img, .card2 .card_img-hover {
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  } */
+  
+  .card_img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 8.5em;
+  }
+  
+  .card_img-hover {
+    position: absolute;
+    width: 100%;
+    height: 8.5em;
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 0;
+    top: 0;
+  }
+  
+  
+  .card__info {
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.5em 1em 1em;
+  }
+  
+  .card_dev {
+    text-transform: uppercase;
+    font-size: xx-small;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+  }
+  
+  .card_nome {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    margin: 0.2em auto;
+  }
+  
+  .link {
+    font-size: x-small;
+    font-weight: 500;
+  }
+  
+  .link_rede {
+    font-weight: 600;
+    text-decoration: none;
+    color: #32539A;
+  }
+  
+  .card:hover .card_img-hover {
+    height: 100%;
+    opacity: 0.3;
+  }
+  
+  .card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .card:hover .area-info {
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #dev_area {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      margin-right: 0; 
+    }
+  }

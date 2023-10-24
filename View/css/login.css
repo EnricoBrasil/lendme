@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.login-section {
+  background-color: rgba(163, 182, 225, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.625rem;
+  width: 45.375rem;
+  height: 38.625rem;
+  display: flex;
+  justify-content: center;
+}
+
+.login-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.875rem;
+}
+.login-content .access h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.login-content .access p {
+  text-align: center;
+}
+.login-content form .inputSign {
+  width: 100%;
+  max-width: 30.25rem;
+  padding: 1.1rem;
+  margin: 0.75rem 0;
+  border-radius: 1.25rem;
+  border: none;
+  font-style: italic;
+}
+.login-content form .inputSign:focus {
+  outline: none;
+}
+.login-content form .login-action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.login-content form .login-action a {
+  text-decoration: underline;
+  font-weight: 200;
+  font-style: italic;
+  color: black;
+  font-size: 0.938rem;
+}
+
+#signIn {
+  width: 100%;
+  height: 3.75rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 1.25rem;
+  border: none;
+  background-color: #FCA311;
+  color: white;
+}
+#signIn:hover {
+  cursor: pointer;
+  background-color: #FFA20B;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*# sourceMappingURL=style.css.map */

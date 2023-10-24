@@ -15,7 +15,7 @@ $(document).ready(function () {
     success: (res) => {
        
       if (res.status === "success") {
-        window.location.href = "View/dashboard.php";
+        window.location.href = "/View/dashboard.php";
         alert(res.message);
       } else {
         alert(res.message);

@@ -1,0 +1,194 @@
+/* TABELAS */
+.table{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    max-height: calc(70% - 1em);
+    position: relative;
+  }
+  
+  .table tr{
+    font-size: medium;
+  }
+  .table tr:first-of-type th:first-child{
+    border-radius: 10px 0 0 0;
+  }
+  .table tr:first-of-type th:last-child{
+    border-radius: 0 10px 0 0;
+  }
+  
+  .table th{
+    position:fixed;
+    top: 0;
+    background-color: rgb(50, 83, 154);
+    color: #ffff;  
+    width: fit-content;
+    height: fit-content;
+    padding: 0.2em 2em;
+  }
+  
+  .table td, .table th {
+    border: 1px solid transparent;
+    border-collapse: collapse; 
+    text-align: center;
+  } 
+  
+  .table tr:nth-child(odd){
+    background-color: #e5e9eb;
+  } 
+  .table tr:nth-child(even){
+    background-color: white;
+  }
+  .table tr:last-of-type td:first-child{
+    border-radius: 0 0 0 10px;
+  }
+  .table tr:last-of-type td:last-child{
+    border-radius: 0 0 10px 0;
+  }
+  .table tr:hover {
+    background-color: #0c3c6941;
+    border: none;
+  }
+  
+  /* RESPONSIVIDADE DAS TABELAS */
+  @media screen and (max-width: 1440px){
+    
+  }
+  
+  @media screen and (max-width: 1200px){
+  
+    .table{
+        max-height: calc(80% - 2em);
+    }
+    
+    .table tr{
+        font-size: small;
+    }
+   
+  }
+  @media screen and (max-width: 768px){
+    
+    .table{
+        max-height: calc(80% - 2em);
+    }
+    
+    .table tr{
+        font-size: x-small;
+    }
+  }
+  
+  /* BOTÕES DO CONTEÚDO - ABRIR MODAL */
+  .btn-conj{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* BOTÕES */
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 12px 7px 16px;
+    gap: 8px;
+    height: 40px;
+    width: max-content;
+    border: none;
+    background: #FFA20BC7;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 1.5em;
+  }
+  
+  .btn .iconM {
+    width: min-content;
+    height: fit-content;
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+  }
+  
+  .btn .lable {
+    margin-top: 1px;
+    font-size: medium;
+    line-height: 22px;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .btn:hover {
+    background: #A3B6E1;
+  }
+  
+  .btn:hover .iconM {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-8deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(8deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 1440px){
+    
+  }
+  
+  @media screen and (max-width: 1200px){
+  
+  /* BOTÕES */
+  #btn {
+    padding: 5px 18px 5px 15px;
+    gap: 7px;
+    height: 35px;
+  }
+  
+  #btn .lable {
+    margin-top: 1.85px;
+    font-size: small;
+  }
+  /* espaçamento p/ se tiver dois botões */
+  .cad{
+    margin-right: 1em;
+  } 
+  }
+  
+  @media screen and (max-width: 768px){
+    
+  /* BOTÕES */
+    #btn {
+      padding: 4px 15px 4px 13px;
+      gap: 5px;
+      height: 30px;
+    }
+    #btn .iconM {
+      font-size: 14px;
+      padding: 4px;
+    }
+    
+    #btn .lable {
+      margin-top: 1.85px;
+      font-size: x-small;
+    }
+    /* espaçamento p/ se tiver dois botões */
+    .cad{
+      margin-right: 1em;
+    } 
+  }
